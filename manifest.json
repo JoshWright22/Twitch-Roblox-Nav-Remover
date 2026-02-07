@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Roblox Link Remover",
+  "version": "1.1",
+  "description": "Removes the Roblox link and fixes nav alignment.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
